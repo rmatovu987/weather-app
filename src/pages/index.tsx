@@ -63,6 +63,7 @@ const Home: NextPage = () => {
     }
 
     if (debouncedQuery) {
+      // eslint-disable-next-line @typescript-eslint/no-floating-promises
       fetchWeather();
     }
   }, [debouncedQuery]);

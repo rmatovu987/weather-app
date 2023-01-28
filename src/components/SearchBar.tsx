@@ -30,6 +30,7 @@ export default function SearchBar({ query, onQuery, onQueryClear }: Props) {
         <input
           type="text"
           placeholder="Search location"
+          // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
           value={query || ""}
           onChange={onQuery}
           className="dark:placeholderbg-gray-400 block w-full rounded-lg border border-gray-300 bg-gray-50 p-4 pl-10 text-sm text-brand focus:border-brand focus:outline-none focus:ring-brand dark:border-gray-200 dark:bg-gray-100 dark:text-black dark:focus:border-brand dark:focus:ring-brand"
